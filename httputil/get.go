@@ -5,7 +5,7 @@ import (
 	"net/http"
 )
 
-func get(url string) (int, string) {
+func Get(url string) (int, string) {
 	resp, err := http.Get(url)
 	if err != nil {
 		return resp.StatusCode, ""
